@@ -20,10 +20,10 @@
 `export PG_HOST="localhost"` \
 Создать секретный ключ \
 `export SECRET_KEY="VerySecretKeyDjango123123"` \
-При необходимости провести миграции \ 
-`python manage.py makemigrations` \ 
-`python manage.py migrate` \ 
-Запуск \ 
+При необходимости провести миграции \
+`python manage.py makemigrations` \
+`python manage.py migrate` \
+Запуск \
 `python manage.py runserver`
 
 ## Тестирование
@@ -45,7 +45,7 @@
     { \
         "id": 1, \
         "title": "test 1", \
-        "content": "ts2", \ 
+        "content": "ts2", \
         "author_name": "ZenBt", \
         "total_likes": 1 \
     }, \
