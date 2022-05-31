@@ -20,6 +20,9 @@
 `export PG_HOST="localhost"` \
 Создать секретный ключ \
 `export SECRET_KEY="VerySecretKeyDjango123123"` \
+При необходимости провести миграции \ 
+`python manage.py makemigrations` \
+`python manage.py migrate`
 Запуск \
 `python manage.py runserver`
 
