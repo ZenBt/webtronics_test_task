@@ -9,7 +9,7 @@
 
 ## Установка
 `git clone https://github.com/ZenBt/webtronics_test_task.git` \
-Создать виртуальное окружени (например через `python3 -m venv venv` \
+Создать виртуальное окружени (например через `python3 -m venv venv`) \
 Активировать venv `source venv/bin/activate` и установить необходимые пакеты \
 `pip install -r webtronics_test_task/requirements.txt` \
 Для работы необходим установленный PostgreSQL. \
