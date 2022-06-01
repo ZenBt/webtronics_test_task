@@ -23,7 +23,7 @@ class PostViewSet(ModelViewSet):
     permission_classes = (IsAuthenticatedOrReadOnly,)
     
     def get_queryset(self):
-        return Post.objects.annotate(total_likes=Count('like__post', filter=Q(like__is_liked=True)))
+        return Post.objects.annotate(total_likes=Count('like__post', filter=Q(like__is_liked=True))).select_related('author')
 
 
 class LikeAPIView(APIView):
