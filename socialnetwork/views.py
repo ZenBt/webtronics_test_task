@@ -38,7 +38,7 @@ class LikeAPIView(APIView):
         return obj
 
     def post(self, request, post_id):
-        if len(Like.objects.filter(Q(post=post_id) & Q(author=request.user.id)).all()) != 0:
+        if Like.objects.filter(Q(post=post_id) & Q(author=request.user.id)).exists():
             raise BadRequest('You have already liked this post')
         request.data._mutable=True
         request.data.update({'post':post_id})
